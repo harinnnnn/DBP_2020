@@ -3,36 +3,37 @@
 ------------
 + 새로 배운 내용
 
-> 리팩토링 
-DB에 접속한 이후 자원을 반납하지 않으면, DB서버가 해당 SQL 문의 결과를 계속 저장하고 있어야하므로 메모리 낭비가 발생한다.
+ 리팩토링 
+
+> DB에 접속한 이후 자원을 반납하지 않으면, DB서버가 해당 SQL 문의 결과를 계속 저장하고 있어야하므로 메모리 낭비가 발생한다.
 따라서 close() 메소드를 호출하여 자원을 반납해줘야 한다.
 
 
->  SELECT
+SELECT
 
-SELECT 컬럼
+>  SELECT 컬럼
 FROM 테이블
 WHERE 조건
 ORDER BY 컬럼
 
 
-> UPDATE
+UPDATE
 
-UPDATE 테이블명
+>  UPDATE 테이블명
 SET
 컬럼1 = 변경할 값,
 컬럼2 = 변경할 값
 
 
-> INSERT
+INSERT
 
-INSERT INTO 테이블명 (컬럼1, 컬럼2, 컬럼3, …)
+>  INSERT INTO 테이블명 (컬럼1, 컬럼2, 컬럼3, …)
 VALUES (값1, 값2, 값3, …)
 
 
-> DELETE
+DELETE
 
-DELETE FROM 테이블명
+>  DELETE FROM 테이블명
 WHERE 조건;
 
 ------------
